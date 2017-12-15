@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Criminal.iml" filepath="$PROJECT_DIR$/Criminal.iml" />
+      <module fileurl="file://C:\Users\Milav\AndroidStudioProjects\CriminalIntent\Criminal.iml" filepath="C:\Users\Milav\AndroidStudioProjects\CriminalIntent\Criminal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriminalIntent.iml" filepath="$PROJECT_DIR$/CriminalIntent.iml" />
       <module fileurl="file://D:\AndroidStudioProjects\Criminal\CriminalIntent 3.0.3.iml" filepath="D:\AndroidStudioProjects\Criminal\CriminalIntent 3.0.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\AndroidStudioProjects\Criminal\app\app.iml" filepath="D:\AndroidStudioProjects\Criminal\app\app.iml" />
