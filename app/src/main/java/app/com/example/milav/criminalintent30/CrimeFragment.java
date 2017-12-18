@@ -232,7 +232,7 @@ public class CrimeFragment extends Fragment {
         mPhotoButton = (ImageButton) v.findViewById(R.id.crime_camera);
         final Intent captureImage = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 //        boolean canTakePhoto = mPhotoFile != null &&
-//                captureImage.resolveActivity(packageManager) != null;
+//                captureImage.resolveActivity(packageManager()) != null;
 //        mPhotoButton.setEnabled(canTakePhoto);
         mPhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override

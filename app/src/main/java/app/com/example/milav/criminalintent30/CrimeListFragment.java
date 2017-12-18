@@ -1,5 +1,6 @@
 package app.com.example.milav.criminalintent30;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -26,6 +27,8 @@ public class CrimeListFragment extends Fragment {
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
     private boolean mSubtitleVisible;
+    private Callbacks mCallbacks;
+
 
     @Nullable
     @Override
@@ -53,6 +56,21 @@ public class CrimeListFragment extends Fragment {
         outState.putBoolean(SAVED_SUBTITLE_VISIBLE, mSubtitleVisible);
     }
 
+    public interface Callbacks {
+        void onCrimeSelected(Crime crime);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mCallbacks = (Callbacks) context;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallbacks = null;
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
